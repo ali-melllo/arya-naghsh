@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: 40 30% 93%;
+  --surface: 38 26% 87%;
+  --ink: 30 10% 12%;
+  --ink-soft: 30 8% 35%;
+  --border: 30 10% 12% / 0.14;
+  --accent: 350 52% 33%;
+}
+
+.dark {
+  --paper: 30 14% 7%;
+  --surface: 28 14% 11%;
+  --ink: 40 30% 93%;
+  --ink-soft: 36 18% 68%;
+  --border: 40 30% 93% / 0.14;
+  --accent: 350 45% 52%;
+}
+
+* { border-color: hsl(var(--border)); }
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.container-page {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

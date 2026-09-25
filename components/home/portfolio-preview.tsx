@@ -31,7 +31,7 @@ function cardVariants(i: number): Variants {
 
 export function PortfolioPreview() {
   return (
-    <section className="border-b border-border py-16 sm:py-20">
+    <section className="border-b-2 border-dashed border-border py-16 sm:py-20">
       <div className="container">
         <SectionHeading
           title="آخرین پروژه‌های ما"

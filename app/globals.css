@@ -3,21 +3,43 @@
 @tailwind utilities;
 
 :root {
-  --paper: 40 30% 93%;
-  --surface: 38 26% 87%;
-  --ink: 30 10% 12%;
-  --ink-soft: 30 8% 35%;
-  --border: 30 10% 12% / 0.14;
-  --accent: 350 52% 33%;
+  /* Warm-ish white with a very subtle cool/blue tint */
+  --paper: 210 40% 98%;
+
+  /* Light blue-gray surface */
+  --surface: 210 30% 94%;
+
+  /* Deep navy text */
+  --ink: 222 47% 11%;
+
+  /* Muted slate-blue text */
+  --ink-soft: 215 16% 42%;
+
+  /* Subtle blue-gray border */
+  --border: 214 32% 20% / 0.14;
+
+  /* Primary blue */
+  --accent: 217 91% 45%;
 }
 
 .dark {
-  --paper: 30 14% 7%;
-  --surface: 28 14% 11%;
-  --ink: 40 30% 93%;
-  --ink-soft: 36 18% 68%;
-  --border: 40 30% 93% / 0.14;
-  --accent: 350 45% 52%;
+  /* Deep navy background */
+  --paper: 222 47% 7%;
+
+  /* Slightly lighter navy surface */
+  --surface: 220 35% 11%;
+
+  /* Cool white */
+  --ink: 210 40% 98%;
+
+  /* Muted blue-gray */
+  --ink-soft: 215 20% 68%;
+
+  /* Subtle light border */
+  --border: 210 40% 98% / 0.14;
+
+  /* Brighter blue for dark mode */
+  --accent: 217 91% 60%;
 }
 
 * { border-color: hsl(var(--border)); }

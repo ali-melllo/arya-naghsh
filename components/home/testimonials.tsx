@@ -38,7 +38,7 @@ const avatarVariants: Variants = {
 
 export function Testimonials() {
   return (
-    <section className="border-b border-border py-16 sm:py-20">
+    <section className="border-b-2 border-dashed border-border py-16 sm:py-20">
       <div className="container">
         <SectionHeading title="مشتریان درباره ما چه می‌گویند؟" />
         <div className="grid gap-5 sm:grid-cols-2">

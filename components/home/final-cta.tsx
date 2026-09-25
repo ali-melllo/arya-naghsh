@@ -42,7 +42,7 @@ export function FinalCta() {
           whileInView="visible"
           viewport={{ once: false, amount: 0.4, margin: "-60px" }}
           variants={boxVariants}
-          className="rounded-lg border border-border bg-gradient-to-br from-accent/10 to-transparent p-10 text-center sm:p-14"
+          className="rounded-xl border border-border bg-gradient-to-br from-accent/10 to-transparent p-10 text-center sm:p-14"
         >
           <h2 className="mb-3.5 text-2xl font-extrabold sm:text-3xl">
             آماده‌اید ایده‌تان را روی کاغذ بیاورید؟

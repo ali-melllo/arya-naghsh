@@ -45,7 +45,7 @@ const dotVariants: Variants = {
 
 export function WhyUs() {
   return (
-    <section className="border-b border-border py-16 sm:py-20">
+    <section className="border-b-2 border-dashed border-border py-16 sm:py-20">
       <div className="container">
         <SectionHeading title="چرا آریا نقش؟" />
         <div className="grid gap-9 sm:grid-cols-2">

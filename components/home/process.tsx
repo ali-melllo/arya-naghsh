@@ -40,7 +40,7 @@ const dividerVariants: Variants = {
 
 export function Process() {
   return (
-    <section className="border-b border-border py-16 sm:py-20">
+    <section className="border-b-2 border-dashed border-border py-16 sm:py-20">
       <div className="container">
         <SectionHeading title="از ایده تا چاپ نهایی" />
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

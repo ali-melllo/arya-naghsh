@@ -4,7 +4,7 @@ import { services } from "@/lib/data/services";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border py-14">
+    <footer className="border-t-2 border-dashed border-border py-14">
       <div className="container grid gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <h4 className="mb-3 text-sm font-bold">آریا نقش</h4>
@@ -40,7 +40,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container flex flex-wrap items-center justify-between gap-3 border-t border-border pt-6 text-xs text-ink-soft">
+      <div className="container flex flex-wrap items-center justify-between gap-3 border-t border-dashed border-border pt-6 text-xs text-ink-soft">
         <span>© ۱۴۰۵ آریا نقش. تمامی حقوق محفوظ است.</span>
         <span className="flex gap-4">
           <Link href="/privacy">حریم خصوصی</Link>

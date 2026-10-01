@@ -3,6 +3,7 @@
 import { motion, type Variants } from "framer-motion";
 import { LinkButton } from "@/components/ui/button";
 import { NumberTicker } from "@/components/shared/number-ticker";
+import Image from "next/image";
 
 // Each card enters from its own direction/rotation so the composition
 // feels like it's assembling itself rather than three identical fades.
@@ -46,21 +47,21 @@ const mark: Variants = {
 
 export function Hero() {
   return (
-    <section className="border-b-2 border-dashed border-border py-16 sm:py-20">
+    <section className="border-b-2 border-dashed border-border py-10 sm:py-20">
       <div className="container grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <h1 className="mb-5 text-3xl font-extrabold leading-[1.3] tracking-tight sm:text-4xl lg:text-5xl">
+          <h1 className="mb-5 text-2xl text-center md:text-right md:text-3xl font-extrabold leading-[1.3] tracking-tight sm:text-4xl lg:text-5xl">
             هر ایده‌ای، وقتی درست چاپ شود، ماندگار می‌شود.
           </h1>
-          <p className="mb-8 max-w-[52ch] text-lg text-ink-soft">
+          <p className="mb-8 max-w-[52ch] text-center md:text-right text-sm md:text-lg text-ink-soft">
             آریا نقش؛ همراه شما برای چاپ حرفه‌ای، دقیق و باکیفیت. از انتخاب متریال تا آخرین
             جزئیات چاپ، کیفیت برای ما یک انتخاب نیست؛ یک استاندارد است.
           </p>
-          <div className="mb-11 flex flex-wrap gap-3.5">
-            <LinkButton href="/portfolio">مشاهده نمونه‌کارها</LinkButton>
-            <LinkButton href="/contact" variant="outline">درخواست مشاوره</LinkButton>
+          <div className="mb-11 justify-center md:justify-start flex flex-wrap gap-3.5">
+            <LinkButton className="min-w-48 md:w-auto" href="/portfolio">مشاهده نمونه‌کارها</LinkButton>
+            <LinkButton className="min-w-48 md:w-auto" href="/contact" variant="outline">درخواست مشاوره</LinkButton>
           </div>
-          <div className="flex flex-wrap gap-9">
+          <div className="flex justify-center md:justify-start gap-9">
             <NumberTicker value={10} suffix="+" label="سال تجربه" />
             <NumberTicker value={500} suffix="+" label="پروژه" />
             <NumberTicker value={120} suffix="+" label="مشتری" />
@@ -74,22 +75,49 @@ export function Hero() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
-            className="absolute inset-x-[8%] top-[6%] h-[42%] w-[62%] rounded-xl border border-border bg-surface shadow-2xl"
-          />
+            className="absolute inset-x-[8%] flex top-[6%] h-[42%] w-[62%] rounded-xl bg-surface shadow-2xl"
+          >
+            <Image
+              src={"/assets/images/hero-2.webp"}
+              alt="اریا نقش"
+              height={500}
+              width={500}
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              className="object-cover object-top shadow rounded-xl"
+            />
+          </motion.div>
           <motion.div
             variants={cardAccent}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
-            className="absolute inset-x-[4%] top-[34%] h-[38%] w-[52%] rounded-xl bg-accent shadow-2xl [inset-inline-end:4%] [inset-inline-start:auto]"
-          />
+            className="absolute flex inset-x-[4%] top-[34%] h-[38%] w-[52%] rounded-xl bg-accent shadow-2xl [inset-inline-end:4%] [inset-inline-start:auto]"
+          >
+            <Image
+              src={"/assets/images/hero-1.webp"}
+              alt="اریا نقش"
+              height={500}
+              width={500}
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              className="object-cover object-top shadow rounded-xl"
+            />
+          </motion.div>
           <motion.div
             variants={cardPaper}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.5 }}
-            className="absolute bottom-[6%] h-[34%] w-[56%] rounded-xl border border-ink-soft bg-paper shadow-xl [inset-inline-start:18%]"
-          />
+            className="absolute flex bottom-[6%] h-[34%] w-[56%] rounded-xl  bg-paper shadow-xl [inset-inline-start:18%]"
+          >
+            <Image
+              src={"/assets/images/hero-3.webp"}
+              alt="اریا نقش"
+              height={500}
+              width={500}
+              sizes="(min-width: 1024px) 45vw, 90vw"
+              className="object-cover object-top shadow rounded-xl"
+            />
+            </motion.div>
           {["start-0 top-0", "end-0 top-0", "start-0 bottom-0", "end-0 bottom-0"].map((pos) => (
             <motion.span
               key={pos}

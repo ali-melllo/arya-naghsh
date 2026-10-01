@@ -22,6 +22,7 @@ export interface PortfolioItem {
   printingMethod: string;
   challenge: string;
   solution: string;
+  image:string;
   gallery: number; // number of gallery placeholder frames to render
 }
 

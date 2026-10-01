@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/shared/section-heading";
 import { services } from "@/lib/data/services";
 
 const toPersianDigits = (n: number) =>
-  String(n).replace(/\d/g, (d) => ["۰","۱","۲","۳","۴","۵","۶","۷","۸","۹"][Number(d)]);
+  String(n).replace(/\d/g, (d) => ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"][Number(d)]);
 
 // Three-column grid, so cycle three entry directions across the cards:
 // left column drifts in from the start side, middle rises from below,
@@ -54,11 +54,15 @@ export function Services() {
               whileInView="visible"
               viewport={{ once: false, amount: 0.3, margin: "-60px" }}
             >
-              <Card>
-                <div className="mb-2.5 text-xs font-bold text-accent">
-                  {toPersianDigits(i + 1).padStart(2, "۰")}
+              <Card className="md:min-h-32">
+                <div className="flex items-center gap-3">
+                  <p className="mb-1.5 text- font-bold text-accent">
+                    {toPersianDigits(i + 1).padStart(2)}
+                  </p>
+                  <h3 className="mb-1.5 text-base font-bold">
+                    {s.title}
+                  </h3>
                 </div>
-                <h3 className="mb-1.5 text-base font-bold">{s.title}</h3>
                 <p className="text-sm text-ink-soft">{s.description}</p>
               </Card>
             </motion.div>

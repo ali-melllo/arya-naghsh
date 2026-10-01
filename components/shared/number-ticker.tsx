@@ -28,7 +28,7 @@ export function NumberTicker({
 
   return (
     <div className="text-center">
-      <motion.b ref={ref} className="block text-3xl font-extrabold text-accent">
+      <motion.b ref={ref} className="block text-xl md:text-3xl font-extrabold text-accent">
         {toPersianDigits(display)}
         {suffix}
       </motion.b>

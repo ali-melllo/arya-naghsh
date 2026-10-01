@@ -21,6 +21,7 @@ export const portfolio: PortfolioItem[] = [
     challenge: "برند نیکا به بسته‌بندی‌ای نیاز داشت که هم روی قفسه دیده شود و هم حس پرمیوم را منتقل کند.",
     solution: "با انتخاب مقوای ضخیم‌تر و برجسته‌کاری موضعی روی لوگو، حس لمسی متمایزی برای جعبه ایجاد شد.",
     gallery: 4,
+    image:"/assets/images/print.webp"
   },
   {
     slug: "vista-business-card",
@@ -33,6 +34,8 @@ export const portfolio: PortfolioItem[] = [
     challenge: "کارت ویزیت باید حس دستی و خاص استودیو را در ابعاد کوچک منتقل می‌کرد.",
     solution: "بافت کتان کاغذ همراه با برجسته‌کاری خشک، حس ملموس و متمایزی به کارت داد.",
     gallery: 3,
+    image:"/assets/images/visit-card.webp"
+
   },
   {
     slug: "hirad-brochure",
@@ -45,6 +48,8 @@ export const portfolio: PortfolioItem[] = [
     challenge: "حجم اطلاعات زیاد بود و باید در قالبی خوانا و ساده ارائه می‌شد.",
     solution: "با شبکه‌بندی دقیق و سلسله‌مراتب تایپوگرافی، اطلاعات در سه بخش مجزا سازمان‌دهی شد.",
     gallery: 3,
+    image:"/assets/images/brochure.webp"
+
   },
   {
     slug: "sepehr-catalog",
@@ -57,6 +62,8 @@ export const portfolio: PortfolioItem[] = [
     challenge: "کاتالوگ باید هم برای نمایشگاه و هم برای ارسال پستی مناسب باشد.",
     solution: "با انتخاب وزن کاغذ متعادل، کاتالوگ سبک اما بادوام طراحی و چاپ شد.",
     gallery: 5,
+    image:"/assets/images/print.webp"
+
   },
   {
     slug: "ariana-poster",
@@ -69,6 +76,8 @@ export const portfolio: PortfolioItem[] = [
     challenge: "پوستر باید از فاصله زیاد هم خوانا و جذاب باشد.",
     solution: "تایپوگرافی بزرگ و کنتراست رنگی بالا، خوانایی پوستر را در فاصله دور تضمین کرد.",
     gallery: 2,
+    image:"/assets/images/visit-card.webp"
+
   },
   {
     slug: "parsgostar-ads",
@@ -81,5 +90,6 @@ export const portfolio: PortfolioItem[] = [
     challenge: "هماهنگی بصری میان اقلام مختلف کمپین چالش اصلی بود.",
     solution: "یک سیستم رنگی و تایپوگرافی ثابت در تمام اقلام چاپی رعایت شد.",
     gallery: 4,
+    image:"/assets/images/brochure.webp"
   },
 ];

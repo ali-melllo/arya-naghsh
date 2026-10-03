@@ -7,14 +7,12 @@ import { Process } from "@/components/home/process";
 import { WhyUs } from "@/components/home/why-us";
 import { Testimonials } from "@/components/home/testimonials";
 import { FinalCta } from "@/components/home/final-cta";
-import { MediaView } from "@/components/home/media-view";
 
 export default function HomePage() {
   return (
     <>
       <div className="container overflow-hidden md:border-x-2 md:border-dashed">
         <Hero />
-        <MediaView />
         <Services />
         <Statistics />
         <TrustedCompanies />
